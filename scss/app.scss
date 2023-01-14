@@ -63,7 +63,9 @@ body {
 }
 
 .home-sushi-title,
-.about-sushi-title {
+.about-sushi-title,
+.recently-title,
+.spinach-leaf {
   height: 3rem;
 }
 
@@ -81,4 +83,29 @@ body {
 
 .dish-card:hover img {
   transform: translateY(-80px);
+}
+
+// Recently Added
+.spinach-leaf {
+  transform: rotate(30deg);
+}
+
+//Newsletter
+.newsletter-bg {
+  background-color: hsl(19, 24%, 15%);
+}
+
+.newsletter-spinach-leaf {
+  transform: translate(190%, -20%) rotate(30deg);
+}
+
+#home {
+  position: relative;
+}
+
+#home::before {
+  content: url("/img/leaf-branch-2.png");
+  position: absolute;
+  transform: translate(-103px, -56px) rotate(90deg) scale(0.5);
+  opacity: 0.2;
 }
