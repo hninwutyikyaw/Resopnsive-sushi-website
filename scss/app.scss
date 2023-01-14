@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
+@import "../node_modules/remixicon/fonts/remixicon.css";
+@import "../node_modules/animate.css/animate.css";
+
+$navbar-nav-link-padding-x: 1.5rem;
+
+$body-bg: hsl(19, 100%, 96%);
+
+$primary: hsl(19, 64%, 54%);
+
+$btn-border-radius: 2rem;
+$btn-padding-x: 1.3rem;
+$btn-padding-y: 0.6rem;
+
+$font-size-base: 0.9rem;
+$light: hsl(19, 8%, 55%);
+$body-color: hsl(19, 16%, 35%);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  9: $spacer * 7,
+  10: $spacer * 8,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//custom css
+
+body {
+  height: 3000px;
+}
+
+.title {
+  font-family: "Lora", serif;
+  color: hsl(19, 16%, 15%);
+}
+
+.subtitle {
+  font-family: "Dancing Script", cursive;
+}
+
+.navbar-brand-logo {
+  height: 2rem;
+}
+
+.btn-primary {
+  color: white;
+}
+
+.btn-icon i {
+  font-size: 20px;
+  margin-left: 5px;
+  vertical-align: middle; //center arrow with text
+}
+
+.home-sushi-title,
+.about-sushi-title {
+  height: 3rem;
+}
+
+// Popular
+.dish-card {
+  background-color: hsl(19, 100%, 97%);
+  img {
+    transform: translateY(-65px);
+    transition: all 0.5s;
+  }
+  p {
+    transform: translateY(-20px);
+  }
+}
+
+.dish-card:hover img {
+  transform: translateY(-80px);
+}
