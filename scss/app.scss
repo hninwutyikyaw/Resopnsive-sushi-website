@@ -35,10 +35,6 @@ $spacers: (
 
 //custom css
 
-body {
-  height: 3000px;
-}
-
 .title {
   font-family: "Lora", serif;
   color: hsl(19, 16%, 15%);
@@ -48,7 +44,8 @@ body {
   font-family: "Dancing Script", cursive;
 }
 
-.navbar-brand-logo {
+.navbar-brand-logo,
+.footer-sushi-title {
   height: 2rem;
 }
 
@@ -108,4 +105,16 @@ body {
   position: absolute;
   transform: translate(-103px, -56px) rotate(90deg) scale(0.5);
   opacity: 0.2;
+}
+
+.footer-title-color {
+  color: hsl(19, 16%, 15%);
+}
+
+.footer-text-color {
+  color: $body-color;
+}
+
+.footer-text-color:hover {
+  color: $primary;
 }
