@@ -49,6 +49,12 @@ $spacers: (
   height: 2rem;
 }
 
+.navbar {
+  background-color: $body-bg;
+  z-index: 1000;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .btn-primary {
   color: white;
 }
@@ -117,4 +123,24 @@ $spacers: (
 
 .footer-text-color:hover {
   color: $primary;
+}
+.newsletter-radius {
+  border-radius: 2rem;
+}
+
+@include media-breakpoint-down(md) {
+  .newsletter-overflow {
+    overflow: hidden;
+  }
+
+  .newsletter-img {
+    transform: translate(-180px, -70px) scale(1.5);
+  }
+
+  .home-sushi-title,
+  .about-sushi-title,
+  .recently-title,
+  .spinach-leaf {
+    height: 2rem;
+  }
 }
